@@ -140,7 +140,7 @@ describe('testing-configuration-logging/unit-tests', () => {
                 const errors = validator.validate({age: 23, name: 'Lal', city: 'NY'});
                 expect(errors).to.have.length(2);
                 expect(errors[0]).to.have.property('field').and.to.be.equal('age');
-                expect(errors[0]).to.have.property('error').and.to.be.equal('too big, expect 10, got 23');
+                expect(errors[0]).to.have.property('error').and.to.be.equal('too big, expect 20, got 23');
                 expect(errors[1]).to.have.property('field').and.to.be.equal('name');
                 expect(errors[1]).to.have.property('error').and.to.be.equal('too short, expect 4, got 3');
             });
